@@ -32,9 +32,8 @@ Link to full requirements for challenge:  https://bootcampspot.instructure.com/c
 
 ## My Results
     1. Our Github Repo:  https://github.com/rdtauche/logoGenerator
-    2. Screencastify video demo:  
-
-
+    2. Screencastify video demo:  https://drive.google.com/file/d/1NZQWUTbL7A3WAV--eyGEmsNatT604yna/view
+    
 ## Usage
 
 Create a program to design basic logos 
