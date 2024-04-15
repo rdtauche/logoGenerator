@@ -32,7 +32,7 @@ Link to full requirements for challenge:  https://bootcampspot.instructure.com/c
 
 ## My Results
     1. Our Github Repo:  https://github.com/rdtauche/logoGenerator
-    2. 
+    2. View live recording:  https://drive.google.com/file/d/1H2unqeViSTkQWcwsPJUp8sZZQsjKMKTU/view
 
 
 ## Usage
