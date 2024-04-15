@@ -6,36 +6,33 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-let logoDetails = {
-  text: '',
-  textColor: '',
-  shape: '',
-  shapeColor: ''
-};
+const LogoDetails = require('./lib/shapes.js');
+
+const newLogo = new LogoDetails();
 
 const questions = [
   {
     query: 'Enter text (up to three characters): ',
     handler: (answer) => {
-      logoDetails.text = answer.substring(0, 3); // Limit to 3 characters
+      newLogo.text = answer.substring(0, 3); // Limit to 3 characters
     }
   },
   {
     query: 'Enter text color (keyword or hex): ',
     handler: (answer) => {
-      logoDetails.textColor = answer;
+      newLogo.textColor = answer;
     }
   },
   {
     query: 'Choose a shape (circle, triangle, square): ',
     handler: (answer) => {
-      logoDetails.shape = ['circle', 'triangle', 'square'].includes(answer.toLowerCase()) ? answer.toLowerCase() : 'circle';
+      newLogo.shape = ['circle', 'triangle', 'square'].includes(answer.toLowerCase()) ? answer.toLowerCase() : 'circle';
     }
   },
   {
     query: 'Enter shape color (keyword or hex): ',
     handler: (answer) => {
-      logoDetails.shapeColor = answer;
+      newLogo.shapeColor = answer;
     }
   }
 ];
@@ -53,7 +50,7 @@ function askQuestion(index = 0) {
 }
 
 function generateSVG() {
-  const { text, textColor, shape, shapeColor } = logoDetails;
+  const { text, textColor, shape, shapeColor } = newLogo;
   const svgHeader = `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">`;
   let shapeSVG = '';
 
